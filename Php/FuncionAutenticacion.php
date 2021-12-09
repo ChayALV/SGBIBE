@@ -83,6 +83,7 @@ class AutenticacionDeUsuarios
                 if ($datos_de_alumno = $consulta_del_alumno->fetch_array()) {
                     //$passwordAlumno = md5($this->password);
                     $passwordAlumno = $this->password;
+                    echo $pa$passwordAlumno;
                     //validamos que la password sea correcta
                     if ($passwordAlumno == $datos_de_alumno['Contraseña']) {
                         return $datos_de_alumno;
