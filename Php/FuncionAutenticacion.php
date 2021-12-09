@@ -133,6 +133,6 @@ class AutenticacionDeUsuarios
 }
 
 $logIN = new AutenticacionDeUsuarios('TI2018S031','GABC7118');
-$datosDeUsuarios = $logIN->peticionAlServidor();
+$datosDeUsuarios = $logIN->getJsonDeInformacion();
 ?>
 
