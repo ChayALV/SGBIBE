@@ -52,13 +52,15 @@ class AutenticacionDeUsuarios
     //Reescribiendo el aarar para formateralo a JSON
     public function getJsonDeInformacion(){
         $array_del_alumon = self::peticionAlServidor();
+        print_r($array_del_alumon);
         if ($array_del_alumon) {
             $json_de_inofrmacion_encode = json_encode($array_del_alumon,JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
             $json_de_inofrmacion_decode = json_decode($json_de_inofrmacion_encode);
-            echo $json_de_inofrmacion_decode;
+            print_r($json_de_inofrmacion_decode);
             //return $json_de_inofrmacion_decode;
         } else {
-            return false;
+            echo "No jalo'
+            //return false;
         }
     }
     //Funcion de validacion y/o insercioncon a la DB
