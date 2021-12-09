@@ -98,6 +98,8 @@ class AutenticacionDeUsuarios
                     if ($data) {
                         $dataAlumno = self::getJsonDeInformacion();
                         print_r($dataAlumno);
+                        echo $this->password;
+                        echo $this->matriculaOrCorreo;
                         $passwordAlumno = md5($this->password);
                         $insertar_alumno_BD = mysqli_query($conexion,"INSERT INTO `Alumnos` (`Matricula`, `Nombre`, `Apellidos`, `Contraseña`, `Carrera`, `Grado`, `Grupo`, `Becado`, `Nivel`, `Cuatrimestre`, `Email`) 
                                                             VALUES ('$dataAlumno->matricula', '$dataAlumno->nombre', '$dataAlumno->apaterno $dataAlumno->amaterno', '$passwordAlumno', '$dataAlumno->desc_carrera', '$dataAlumno->desc_grado', '$dataAlumno->grupo', 0, 1, '$dataAlumno->desc_grupo', '$dataAlumno->mail');");
