@@ -1,7 +1,3 @@
-<?php  
-$mat = 'GABC7118';
-$passwordAlumno = md5($mat);
-?>
 <div class="content-wrapper" id="contenido">
     <!-- Content Header (Page header) -->
     <section class="content-header">
