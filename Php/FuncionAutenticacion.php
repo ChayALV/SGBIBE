@@ -98,17 +98,17 @@ class AutenticacionDeUsuarios
                     if ($data) {
                         $dataAlumno = self::getJsonDeInformacion();
                         //print_r($dataAlumno);
-                        echo $this->password;
-                        echo $this->matriculaOrCorreo;
-                        echo $dataAlumno->matricula;
+                       // echo $this->password;
+                        //echo $this->matriculaOrCorreo;
+                        //echo $dataAlumno->matricula;
                         $passwordAlumno = md5($this->password);
                         $insertar_alumno_BD = mysqli_query($conexion,"INSERT INTO Alumnos (Alumnos.Matricula, Alumnos.Nombre, Alumnos.Apellidos, Alumnos.Contrasena, Alumnos.Carrera, Alumnos.Grado, Alumnos.Grupo, Alumnos.Becado, Alumnos.Nivel, Alumnos.Cuatrimestre, Alumnos.Email) 
                                                             VALUES ('$dataAlumno->matricula', '$dataAlumno->nombre', '$dataAlumno->apaterno $dataAlumno->amaterno', '$passwordAlumno', '$dataAlumno->desc_carrera', '$dataAlumno->desc_grado', '$dataAlumno->grupo', 0, 1, '$dataAlumno->desc_grupo', '$dataAlumno->mail');");
-                        if($insertar_alumno_BD){
-                            echo "si jalo";
-                        }else{
-                            echo "no jalo";
-                        }
+                       // if($insertar_alumno_BD){
+                        //    echo "si jalo";
+                       // }else{
+                        //    echo "no jalo";
+                        //}
                         
                         $consulta_del_alumno = mysqli_query($conexion,"SELECT * FROM `Alumnos` WHERE Matricula = '$matriculaAlumno'");
                         if($datos_de_alumno = $consulta_del_alumno->fetch_array()){
@@ -143,7 +143,7 @@ class AutenticacionDeUsuarios
     }
 }
 
-$logIN = new AutenticacionDeUsuarios('TI2018S031','GABC7118');
-$datosDeUsuarios = $logIN->validacionOinsercion();
+//$logIN = new AutenticacionDeUsuarios('TI2018S031','GABC7118');
+//$datosDeUsuarios = $logIN->validacionOinsercion();
 ?>
 
