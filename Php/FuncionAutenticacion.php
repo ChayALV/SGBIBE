@@ -77,7 +77,7 @@ class AutenticacionDeUsuarios
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
                 <strong>Si sigues intentando forzar el login tu IP será permanentemente suspendida</strong>
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>';;
+                </div>';
                 return false;
             }else{
                 if ($datos_de_alumno = $consulta_del_alumno->fetch_array()) {
