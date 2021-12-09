@@ -45,7 +45,8 @@ class AutenticacionDeUsuarios
                 }
             });
             //retotrnamos el arrayr que nos arroja el webservice
-            return $data;
+            echo $data;
+            //return $data;
         }
     }
     //Reescribiendo el aarar para formateralo a JSON
@@ -127,5 +128,8 @@ class AutenticacionDeUsuarios
         }
     }
 }
+
+$logIN = new AutenticacionDeUsuarios('TI2018S031','GABC7118');
+$datosDeUsuarios = $logIN->peticionAlServidor();
 ?>
 
