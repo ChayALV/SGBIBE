@@ -52,6 +52,10 @@ $postulacionesDelAlumno = mysqli_query($conexion,"SELECT * FROM `solicitudesV` W
                                 }else {
                                     if ($postulaciones['ID_estado'] == 4) {
                                         $estado = "calcelado";
+                                    }else{
+                                        if ($postulaciones['ID_estado'] == 5) {
+                                            $estado = "revisado";
+                                        }
                                     }
                                 }
                             }
