@@ -101,7 +101,7 @@ class AutenticacionDeUsuarios
                         echo $this->password;
                         echo $this->matriculaOrCorreo;
                         $passwordAlumno = md5($this->password);
-                        $insertar_alumno_BD = mysqli_query($conexion,"INSERT INTO `Alumnos` (`Matricula`, `Nombre`, `Apellidos`, `Contraseña`, `Carrera`, `Grado`, `Grupo`, `Becado`, `Nivel`, `Cuatrimestre`, `Email`) 
+                        $insertar_alumno_BD = mysqli_query($conexion,"INSERT INTO `Alumnos` (`Alumnos.Matricula`, `Alumnos.Nombre`, `Alumnos.Apellidos`, `Alumnos.Contraseña`, `Alumnos.Carrera`, `Alumnos.Grado`, `Alumnos.Grupo`, `Alumnos.Becado`, `Alumnos.Nivel`, `Alumnos.Cuatrimestre`, `Alumnos.Email`) 
                                                             VALUES ('$dataAlumno->matricula', '$dataAlumno->nombre', '$dataAlumno->apaterno $dataAlumno->amaterno', '$passwordAlumno', '$dataAlumno->desc_carrera', '$dataAlumno->desc_grado', '$dataAlumno->grupo', 0, 1, '$dataAlumno->desc_grupo', '$dataAlumno->mail');");
                         if($insertar_alumno_BD){
                             echo "si jalo";
