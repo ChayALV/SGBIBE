@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- AJAX -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- FUNCIONES JS -->
+    <script src="Js/alertasLogin.js"></script>
+    <link rel="stylesheet" href="Css/styles.css">
+    <title>UTSEM</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="Source/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Source/favicon_package_v0.16//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Source/favicon_package_v0.16//favicon-16x16.png">
+    <link rel="manifest" href="Source/favicon_package_v0.16//site.webmanifest">
+    <link rel="mask-icon" href="Source/favicon_package_v0.16//safari-pinned-tab.svg" color="#5bbad5">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="container w-75 mt-3 mb-5 rounded shadow contenedor-1">
+                <div class="row align-items-stretch">
+                    <div class="col bg-imagen-login d-none d-lg-block col-md-4 col-lg-5 col-xl-6 rounded">
+                        
+                    </div>
+                    <div class="col bg-white p-5 rounded-end">
+                        <div class="text-center small" id="Respuesta-Alerta"></div>
+                        <div class="text-center">
+                            <img src="Source/logoUTSEM.png" width="200" alt="">
+                        </div>  
+                        <h2 class="fw-bold text-center py-3">LOGIN</h2>
+                        <!--LOGIN-->
+                        <form action="autenticacion.php" method="post">
+                            <div class="md-5">
+                                <label for="email" class="form-label">📨 Matricula</label>
+                                <input type="text" class="form-control" id="email">
+                            </div><br>
+                            <div class="md-5">
+                                <label for="password" class="form-label">🔑 Contraseña</label>
+                                <input type="password" class="form-control" id="password">
+                            </div><br>
+                            <div class="d-grid mb-3 boton">
+                                <input type="button" class="btn white" onclick="AlertaLogin();" value="Login">
+                            </div>
+                            <hr class="my-4">
+                            <div class="my-3 mb-1 mt-3">
+                                <span>En caso de ser alumno y no recordar tu contraseña pica el enlace <a href="http://mi-escuelamx.com:8888/utsem/acceso.asp">Recupera tu contraseña</a></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

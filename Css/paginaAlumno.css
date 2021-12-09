@@ -1,0 +1,46 @@
+body {
+  background: #8e2de2; /* fallback for old browsers */
+  background: linear-gradient(
+    to right,
+    #009878,
+    #55c4a9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.fondo {
+  background-color: white;
+}
+.bordesRedondeados {
+  border-radius: 10px;
+}
+img {
+  object-fit: cover;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  border: 1px solid #aaa;
+}
+.uno {
+  border-radius: 10px;
+  height: 300px;
+}
+
+.enEspera {
+  background: #8e2de2; /* fallback for old browsers */
+  background: linear-gradient(to right, #ecfd00, #ffffff);
+}
+.aceptado {
+  background: #8e2de2; /* fallback for old browsers */
+  background: linear-gradient(to right, #55c4a9, #ffffff);
+}
+.rechazado {
+  background: #8e2de2; /* fallback for old browsers */
+  background: linear-gradient(to right, #ff0000, #ffffff);
+}
+.calcelado {
+  background: #8e2de2; /* fallback for old browsers */
+  background: linear-gradient(to right, #ff5e00, #ffffff);
+}
+@media screen and (max-width: 480px) {
+  #tarjeta {
+    width: calc(100% - 80px);
+  }
+}

@@ -1,0 +1,64 @@
+body{
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: linear-gradient(to right, #009878, #55c4a9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.bg-imagen-login{
+    background-image: url("../Source/UTSEM.jpg");
+    background-position: center center;
+}
+.bg-imagen-resgistro{
+    background-image: url("../Source/img-1.jpg");
+    background-position: center center;
+}
+.contenedor-1{
+    margin:0 auto;
+    left: 0;
+    right: 0;
+}
+.boton{
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: linear-gradient(to right, #009878, #55c4a9); 
+    border-radius: 30px;
+}
+.white{
+    color: white;
+}
+.boton:hover{
+    background: #A770EF;  /* fallback for old browsers */
+    background: linear-gradient(to right, #55c4a9, #009878);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.redondeo{
+    border-radius: 10px;
+}
+.succes{
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    border-radius: 30px;
+}
+.succes:hover{
+    background: #AAFFA9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+.warnin{
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    border-radius: 30px;
+}
+.warnin:hover{
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+.danger{
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    border-radius: 30px;
+}
+.danger:hover{
+    background: #e52d27;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
