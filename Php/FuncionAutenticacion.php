@@ -45,7 +45,7 @@ class AutenticacionDeUsuarios
                 }
             });
             //retotrnamos el arrayr que nos arroja el webservice
-            echo $data;
+            print_r($data);
             //return $data;
         }
     }
