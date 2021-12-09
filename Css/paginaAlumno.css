@@ -39,6 +39,10 @@ img {
   background: #8e2de2; /* fallback for old browsers */
   background: linear-gradient(to right, #ff5e00, #ffffff);
 }
+.revisado {
+  background: #8e2de2; /* fallback for old browsers */
+  background: linear-gradient(to right, #faaa00, #ffffff);
+}
 @media screen and (max-width: 480px) {
   #tarjeta {
     width: calc(100% - 80px);
