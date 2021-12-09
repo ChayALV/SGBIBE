@@ -31,7 +31,7 @@ class AutenticacionDeUsuarios
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
             <strong>Si sigues intentando forzar el login tu IP será permanentemente suspendida</strong>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>';;
+            </div>';
             return false;
         }
         $data = $resultado['LoginResult']['diffgram'];
@@ -59,7 +59,7 @@ class AutenticacionDeUsuarios
             print_r($json_de_inofrmacion_decode);
             //return $json_de_inofrmacion_decode;
         } else {
-            echo "No jalo';
+            echo "No jalo";
             //return false;
         }
     }
