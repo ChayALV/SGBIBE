@@ -45,8 +45,8 @@ class AutenticacionDeUsuarios
                 }
             });
             //retotrnamos el arrayr que nos arroja el webservice
-            print_r($data);
-            //return $data;
+            //print_r($data);
+            return $data;
         }
     }
     //Reescribiendo el aarar para formateralo a JSON
@@ -55,7 +55,8 @@ class AutenticacionDeUsuarios
         if ($array_del_alumon) {
             $json_de_inofrmacion_encode = json_encode($array_del_alumon,JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
             $json_de_inofrmacion_decode = json_decode($json_de_inofrmacion_encode);
-            return $json_de_inofrmacion_decode;
+            echo $json_de_inofrmacion_decode;
+            //return $json_de_inofrmacion_decode;
         } else {
             return false;
         }
