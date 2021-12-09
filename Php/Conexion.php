@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "password";
+$password = "passworsd";
 $bd = "sgdbibe";
 $mat = 'GABC7118';
 $passwordAlumno = md5($mat);
