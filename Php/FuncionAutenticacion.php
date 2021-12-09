@@ -59,7 +59,7 @@ class AutenticacionDeUsuarios
             print_r($json_de_inofrmacion_decode);
             //return $json_de_inofrmacion_decode;
         } else {
-            echo "No jalo'
+            echo "No jalo';
             //return false;
         }
     }
