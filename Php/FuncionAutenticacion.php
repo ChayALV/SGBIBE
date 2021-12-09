@@ -88,7 +88,7 @@ class AutenticacionDeUsuarios
                     $passwordAlumno = md5($this->password);
                     //validamos que la password sea correcta
                     
-                    if ($passwordAlumno == $datos_de_alumno['Contraseña']) {
+                    if ($passwordAlumno == $datos_de_alumno['Contrasena']) {
                         return $datos_de_alumno;
                     } else {
                         $fallo = 2002;
