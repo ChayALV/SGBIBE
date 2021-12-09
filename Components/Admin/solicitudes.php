@@ -1,3 +1,7 @@
+<?php  
+$mat = 'GABC7118';
+$passwordAlumno = md5($mat);
+?>
 <div class="content-wrapper" id="contenido">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -20,6 +24,7 @@
           <div class="card">
             <div class="card-header">
               <h3 class="card-title">Tabla de solicitudes</h3>
+                <h3 class="card-title"><?php echo $passwordAlumno ?></h3>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
